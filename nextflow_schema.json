@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "plat-7232-repro",
+  "type": "object",
+  "definitions": {
+    "main": {
+      "title": "Main",
+      "type": "object",
+      "properties": {
+        "x": { "type": "string", "description": "Set to 'other' by the other profile" }
+      }
+    }
+  },
+  "allOf": [{ "$ref": "#/definitions/main" }]
+}
